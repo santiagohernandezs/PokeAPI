@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.navbar_ul > a{
+    text-decoration: none;
+    color: inherit;    
+}
+
+.navbar_ul > a:visited {
+   color: inherit;
+}
+
+.navbar_ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar_ul_li {
+    position: relative;
+}
+
+.navbar_ul_li:hover {
+    cursor: pointer;
+}
+
+.navbar_ul_li::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    transform: scale(0);
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 150ms;
+}
+
+.navbar_ul_li:hover::before {
+    transform: scale(1);
+}

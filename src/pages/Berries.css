@@ -1,0 +1,10 @@
+.grid_item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    width: 58%;
+}
